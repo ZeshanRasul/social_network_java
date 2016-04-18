@@ -46,9 +46,13 @@ I also found issues setting up and using Mockito and Gradle, technologies I had 
 
 I greatly enjoyed developing this application while learning the basics of Java. My first priority for future development is to correct the `Exception in thread “main” java.lang.ClassNotFoundException:` mentioned above, in order to regain full functionality.  Although difficult to gauge at this stage with my limited knowledge of Java, I feel as though this should be relatively easy to solve, as this was only caused by something as simple as change in file structure, there shouldn't be any persisting errors in the code itself. 
 
-I would also like to refactor the message saving system.  Rather than saving all messages to one ArrayList, only accessible by an owner property which refers to the user object ID rather than username.  I would instead save each users messages into their own ArrayList, potentially saved in the User class.  This would make it much easier to display other users messages and solve an issue I spent much time debugging.
+I would also like to refactor the message saving system.  Rather than saving all messages to one ArrayList, only accessible by an owner property which refers to the user object ID rather than username.  I would instead save each users messages into their own ArrayList, potentially saved in the User class.  This would make it much easier to display other users messages and solve an issue I spent much time debugging.  This would bring my to full functionality
 
 I would also like to extract the menu and command line interface from the main Javitter class.  This would likely make my main class much tidier, and I could also extract out many if not all of the supporting methods.
+
+My tests are also limited, partly due to learning a new testing and mocking framework, but also because once I was unable to run my code, it was impossible to test code, and impossible to tell whether syntax and tests were written correctly.  I would like to be able to return to writing these tests, in order to learn the frameworks but also so that I can refactor my code and rest assured that functionality still remains.
+
+Currently data is lost each time the application is run, I would also like to look at implementing a database so that users can persist data between sessions.
 
 
 
